@@ -13,7 +13,7 @@ namespace Infrastructure.Data
     {
         public static async Task SeedAsync(StoreContext context, ILoggerFactory loggerFactory)
         {
-            try
+            try 
             {
                 if(!context.ProductBrands.Any())
                 {
@@ -61,8 +61,7 @@ namespace Infrastructure.Data
 
                     await context.SaveChangesAsync();
                     //this will save all our product brands in our database
-                }
-
+                } 
             }
             catch (Exception ex)
             {
